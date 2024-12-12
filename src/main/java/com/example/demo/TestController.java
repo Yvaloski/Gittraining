@@ -20,10 +20,5 @@ public class TestController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body("Received message: " + message);
     }
-
-    // Endpoint pour vérifier un paramètre d'URL
-    @GetMapping("/{id}")
-    public ResponseEntity<String> getById(@PathVariable("id") int id) {
-        return ResponseEntity.ok("You requested data for ID: " + id);
-    }
+    
 }
