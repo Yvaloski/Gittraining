@@ -26,4 +26,8 @@ public class TestController {
     public ResponseEntity<String> getById(@PathVariable("id") int id) {
         return ResponseEntity.ok("You requested data for ID: " + id);
     }
+    @GetMapping("/{id}")
+    public String getTestMessage(@PathVariable("id") int id) {
+        return ("You requested data for ID: " + id);
+    }
 }
